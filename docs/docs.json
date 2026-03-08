@@ -11,6 +11,17 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Home",
+        "groups": [
+          {
+            "group": "",
+            "pages": [
+              "index"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Get Started",
         "groups": [
           {
@@ -18,7 +29,8 @@
             "pages": [
               "get-started/introduction",
               "get-started/quickstart",
-              "get-started/concepts"
+              "get-started/concepts",
+              "get-started/skills-and-agents"
             ]
           }
         ]
@@ -51,6 +63,6 @@
     ]
   },
   "footerSocials": {
-    "github": "https://github.com/jdunca/vibe-coder-docs"
+    "github": "https://github.com/shadowcodex/vibe-coder-docs"
   }
 }

@@ -1,0 +1,57 @@
+---
+title: "Skills & Agents"
+description: "How to use agent skills to give your AI coding tools domain expertise from Vibe Coder Docs."
+icon: "wand-magic-sparkles"
+---
+
+# Skills & Agents
+
+AI coding tools are powerful, but they don't always have the right context for your project. **Agent Skills** solve this — they're portable packages of instructions, scripts, and resources that agents can discover and use to work more accurately.
+
+## What Are Agent Skills?
+
+Agent Skills are folders containing instructions (typically a `SKILL.md` file) that your AI coding tool can load on demand. They give agents:
+
+- **Domain expertise** — specialized knowledge packaged as reusable instructions
+- **New capabilities** — tasks like code review, security audits, or documentation generation
+- **Repeatable workflows** — consistent, auditable multi-step processes
+- **Interoperability** — the same skill works across different AI tools
+
+Skills are supported by Claude Code, Cursor, VS Code Copilot, Codex, Goose, Roo Code, and many more.
+
+## Our Skill Library
+
+This project maintains a shared skill library at [`/skill-library`](https://github.com/shadowcodex/vibe-coder-docs/tree/main/skill-library) in the repo. These are general-purpose development skills that any project can use — not specific to Vibe Coder Docs.
+
+To use a skill from the library, copy the skill folder into your project or reference it from your agent's configuration.
+
+## Getting Started with Skills
+
+<Steps>
+  <Step title="Browse Available Skills">
+    Check out the [Agent Skills example library](https://github.com/anthropics/skills) for ready-to-use skills, or browse our own [`/skill-library`](https://github.com/shadowcodex/vibe-coder-docs/tree/main/skill-library).
+  </Step>
+  <Step title="Add a Skill to Your Project">
+    Copy a skill folder into your project's `.skills/` directory (or wherever your agent looks for skills).
+  </Step>
+  <Step title="Let Your Agent Discover It">
+    Most compatible agents will automatically discover skills in your project. When you start a task, the agent loads the relevant skill and follows its instructions.
+  </Step>
+</Steps>
+
+## Learn More
+
+The Agent Skills format is an open standard supported by a growing ecosystem of AI tools.
+
+<CardGroup cols={2}>
+  <Card title="Agent Skills Spec" icon="file-code" href="https://agentskills.io/home">
+    The official Agent Skills site — learn about the format, specification, and how to build your own skills.
+  </Card>
+  <Card title="Example Skills" icon="code" href="https://github.com/anthropics/skills">
+    Browse example skills on GitHub from Anthropic's open-source collection.
+  </Card>
+</CardGroup>
+
+<Tip>
+  If you're building with AI coding tools, skills are one of the highest-leverage things you can set up. A good skill turns a generic AI assistant into a domain expert.
+</Tip>
