@@ -1,0 +1,47 @@
+---
+title: "Security Overview"
+description: "Why security matters for vibe coders, and an overview of the threat landscape."
+icon: "shield-halved"
+---
+
+# Security
+
+Security isn't optional, and it's not something you bolt on at the end. Every decision you make while building software has security implications — and AI coding tools won't always warn you about them.
+
+<Warning>
+  This section is a work in progress. Content is being actively developed.
+</Warning>
+
+## Why Vibe Coders Need to Care
+
+When you build software with AI tools, you're still responsible for:
+
+- **Your users' data** — if it leaks, that's on you
+- **Your infrastructure costs** — an unsecured app can be exploited to run up cloud bills
+- **Legal compliance** — regulations like GDPR, HIPAA, and SOC 2 don't care how you built your app
+- **Your reputation** — one security incident can destroy trust
+
+## The Four Pillars
+
+We break security into four focused areas:
+
+<CardGroup cols={2}>
+  <Card title="Infrastructure Security" icon="lock" href="/concepts/security/infra">
+    How to secure the systems your code runs on — cloud accounts, servers, networks, and secrets.
+  </Card>
+  <Card title="Application Security" icon="bug" href="/concepts/security/application">
+    How to write code that doesn't have exploitable vulnerabilities — input validation, auth, and the OWASP Top 10.
+  </Card>
+  <Card title="AI Security" icon="robot" href="/concepts/security/ai">
+    Threats unique to AI-powered applications — prompt injection, data leakage, and model manipulation.
+  </Card>
+  <Card title="Localhost Security" icon="laptop" href="/concepts/security/localhost">
+    How to keep your development machine secure — exposed ports, local secrets, and dev environment hygiene.
+  </Card>
+</CardGroup>
+
+## The #1 Mistake
+
+The most common security mistake vibe coders make: **committing secrets to Git**.
+
+API keys, database passwords, and tokens pushed to GitHub are scraped by bots within minutes. Use environment variables and `.gitignore`. Always.
