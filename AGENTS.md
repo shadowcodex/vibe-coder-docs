@@ -4,7 +4,7 @@
 A Mintlify documentation site providing engineering wisdom and best practices for vibe coders (non-engineers using AI coding tools like Claude Code, Codex, Antigravity, etc).
 
 ## Structure
-- `/docs` — Mintlify docsite (MDX files + mint.json config)
+- `/docs` — Mintlify docsite (MDX files + docs.json config)
 - `/vibe-coder-docs-skills` — Skills for AI agents working with this repo
 - `/skill-library` — General development skills shared across projects
 - `/.claude` — Claude Code configuration
@@ -17,9 +17,9 @@ A Mintlify documentation site providing engineering wisdom and best practices fo
 - Content should be useful to both human readers and AI agents consuming the docs
 
 ## Mintlify
-- Docs live in `/docs` with `mint.json` as the config
+- Docs live in `/docs` with `docs.json` as the config
 - Pages are `.mdx` files (MDX = Markdown + JSX components)
-- Navigation structure is defined in `mint.json`
+- Navigation structure is defined in `docs.json`
 - Run locally with `npx mintlify dev` from the `/docs` directory
 
 ## Writing Docs

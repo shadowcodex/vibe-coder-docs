@@ -1,5 +1,6 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
   "name": "Vibe Coder Docs",
   "favicon": "/favicon.svg",
   "colors": {
