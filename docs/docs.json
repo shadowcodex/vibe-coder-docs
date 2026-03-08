@@ -6,61 +6,50 @@
   "colors": {
     "primary": "#6366f1",
     "light": "#818cf8",
-    "dark": "#4f46e5",
-    "anchors": {
-      "from": "#6366f1",
-      "to": "#a78bfa"
-    }
+    "dark": "#4f46e5"
   },
-  "topbarLinks": [
-    {
-      "name": "GitHub",
-      "url": "https://github.com/jdunca/vibe-coder-docs"
-    }
-  ],
-  "tabs": [
-    {
-      "name": "Concepts",
-      "url": "concepts"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "GitHub",
-      "icon": "github",
-      "url": "https://github.com/jdunca/vibe-coder-docs"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "get-started/introduction",
-        "get-started/quickstart",
-        "get-started/concepts"
-      ]
-    },
-    {
-      "group": "Concepts",
-      "pages": [
-        "concepts/general-it",
-        {
-          "group": "Security",
-          "pages": [
-            "concepts/security/overview",
-            "concepts/security/infra",
-            "concepts/security/application",
-            "concepts/security/ai",
-            "concepts/security/localhost"
-          ]
-        },
-        "concepts/general-programming",
-        "concepts/data-theory",
-        "concepts/databases-storage",
-        "concepts/building-ai-applications"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/introduction",
+              "get-started/quickstart",
+              "get-started/concepts"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Concepts",
+        "groups": [
+          {
+            "group": "Concepts",
+            "pages": [
+              "concepts/general-it",
+              {
+                "group": "Security",
+                "pages": [
+                  "concepts/security/overview",
+                  "concepts/security/infra",
+                  "concepts/security/application",
+                  "concepts/security/ai",
+                  "concepts/security/localhost"
+                ]
+              },
+              "concepts/general-programming",
+              "concepts/data-theory",
+              "concepts/databases-storage",
+              "concepts/building-ai-applications"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "github": "https://github.com/jdunca/vibe-coder-docs"
   }
