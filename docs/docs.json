@@ -8,6 +8,14 @@
     "light": "#818cf8",
     "dark": "#4f46e5"
   },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/shadowcodex/vibe-coder-docs"
+      }
+    ]
+  },
   "navigation": {
     "tabs": [
       {
@@ -30,7 +38,19 @@
               "get-started/introduction",
               "get-started/quickstart",
               "get-started/concepts",
-              "get-started/skills-and-agents"
+              "get-started/skills-and-agents",
+              "get-started/build-in-public"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Updates",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "updates/index"
             ]
           }
         ]
@@ -60,6 +80,20 @@
           }
         ]
       }
+    ]
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "grok",
+      "mcp",
+      "add-mcp",
+      "cursor",
+      "vscode"
     ]
   },
   "footerSocials": {
